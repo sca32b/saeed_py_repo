@@ -23,14 +23,14 @@ def shift_cipher_decrypt(cipher_text, shift):
         plaintext += char
 
   return plaintext
-
+print("*****Welcome to the shift ceasers cipher program*****")
 operation = input("Enter the operation: (e) for encrypt and (d) for decrypt ").lower()
-plaintext = input("Enter the text: ").lower()
+text = input("Enter the text: ").lower()
 shift = int(input("Enter the shift number: "))
 
 if operation == "e":
- print(f" the ciper text is:  {shift_cipher_encrypt(plaintext, shift)}")
-if operation == "d":
- print(f" the plain text is:  {shift_cipher_decrypt(plaintext, shift)}")
+ print(f" the ciper text is:  {shift_cipher_encrypt(text, shift)}")
+elif operation == "d":
+ print(f" the plain text is:  {shift_cipher_decrypt(text, shift)}")
 else:
-    print("Invalid operation")
+ print("Invalid operation")
