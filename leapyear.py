@@ -1,12 +1,26 @@
-year=int(input("Enter a year\n"))
 
-if (year % 4 == 0):
-    if (year % 100 == 0):
-        if (year % 400 == 0):
-            print("Leap year")
+
+def isLeapYear(year):
+    if (year % 4 == 0):
+        if (year % 100 == 0):
+            if (year % 400 == 0):
+                return True
+            else:
+                return False
         else:
-            print("Not a leap year")
+            return True
     else:
-        print("Leap year")
+        return False
+
+days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+year=int(input("Enter a year: "))
+month=int(input("Enter a month (in number): "))
+
+print(month)
+
+if isLeapYear(year) & int(month) == 2:
+    print(f"{year} is a leap year and February has 29 days")
 else:
-    print("Not a leap year")
+    print(f"{year} and {months[int(month)-1]} has {days_in_month[int(month)-1]} days")
