@@ -23,7 +23,7 @@ def shift_cipher_decrypt(cipher_text, shift):
         plaintext += char
 
   return plaintext
-print("*****Welcome to the shift ceasers cipher program*****")
+print("\n\n\n*****Welcome to the shift ceasers cipher program*****\n\n\n")
 operation = input("Enter the operation: (e) for encrypt and (d) for decrypt ").lower()
 text = input("Enter the text: ").lower()
 shift = int(input("Enter the shift number: "))
