@@ -23,10 +23,20 @@ def shift_cipher_decrypt(cipher_text, shift):
         plaintext += char
 
   return plaintext
+
+test_string = "hello"
+message  = "hello" if test_string == "hello" else "Not hello"
+print(message)
+
+
 print("\n\n\n*****Welcome to the shift ceasers cipher program*****\n\n\n")
 operation = input("Enter the operation: (e) for encrypt and (d) for decrypt ").lower()
 text = input("Enter the text: ").lower()
 shift = int(input("Enter the shift number: "))
+
+
+
+
 
 if operation == "e":
  print(f" the ciper text is:  {shift_cipher_encrypt(text, shift)}")
