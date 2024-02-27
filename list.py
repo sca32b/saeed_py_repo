@@ -8,7 +8,7 @@ for i in list:
 counter+=1
 print(list)
 
-youtuber = "test"
+youtuber = input("Enter the name of the youtuber: ")
 
 print(f"subscribe to {youtuber}")
 print("subscribe to {}".format(youtuber))

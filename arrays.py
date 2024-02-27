@@ -18,9 +18,10 @@ removed=testlist.pop()
 print(f"The last element {removed} is removed: {testlist}")
 
 #Dictionary
-names = ["John", "James", "Jack", "Jill", "Jenny", "Charles", "Charlie", "Chad", "Chloe", "Cheryl]
+names = ["John", "James", "Jack", "Jill", "Jenny", "Charles", "Charlie", "Chad", "Chloe", "Cheryl"]
 ages = [34, 23, 45, 32]
 locations = ["New York", "California", "Texas", "Florida", "New Jersey"]
+test_record = {"Name": "John", "Age": 34, "Location": "New York"}
 
 LocationArray = []
 

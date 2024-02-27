@@ -1,8 +1,8 @@
 
 
 def isLeapYear(year):
-  """This is a test function
-  This function checks if the year is a leap year"""  
+    """This is a test function
+    This function checks if the year is a leap year"""  
     if (year % 4 == 0):
         if (year % 100 == 0):
             if (year % 400 == 0):
@@ -24,7 +24,6 @@ if month > 12:
     print("Invalid month")
     exit()
 
-print(month)
 
 if isLeapYear(year) and int(month) == 2:
     print(f"{year} is a leap year and February has 29 days")
